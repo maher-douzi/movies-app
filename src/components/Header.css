@@ -1,0 +1,35 @@
+.header {
+  padding: 10px 0;
+  background: var(--primary);
+}
+.header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+.header a:hover {
+  opacity: 0.7;
+}
+.header .logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.header .nav-links li:last-child {
+  margin-right: 0;
+}
+@media (max-width: 575px) {
+  .header .nav-links li {
+    margin: 0 5px;
+  }
+}

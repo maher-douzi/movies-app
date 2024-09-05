@@ -1,0 +1,32 @@
+.movie-controls {
+  position: relative;
+}
+.movie-controls .inner-card-controls {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.movie-controls:hover .inner-card-controls {
+  opacity: 1;
+}
+.ctrl-btn {
+  font-size: 1.25rem;
+  padding: 5px;
+  margin: 0;
+  color: #fefefe;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease;
+}
+.ctrl-btn:hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
